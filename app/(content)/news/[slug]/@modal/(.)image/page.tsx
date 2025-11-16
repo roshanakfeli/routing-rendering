@@ -2,9 +2,8 @@
 
 import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound, useRouter } from "next/navigation";
-import React from "react";
 
-const InterceptedImagePage = ({ params }) => {
+export default function InterceptedImagePage({ params }) {
   const route = useRouter();
 
   const newsItemSlug = params.slug;
@@ -26,6 +25,4 @@ const InterceptedImagePage = ({ params }) => {
       </dialog>
     </>
   );
-};
-
-export default InterceptedImagePage;
+}

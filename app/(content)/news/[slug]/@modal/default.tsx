@@ -1,5 +1,3 @@
-const ModalDefaultPage = () => {
+export default function ModalDefaultPage() {
   return null;
-};
-
-export default ModalDefaultPage;
+}
